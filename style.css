@@ -6,10 +6,18 @@
 
 *{
 /*login/signup page*/
-background-image: url("https://i.pinimg.com/564x/f0/a6/a4/f0a6a4c39a4dfa7accf63f9a457f28ce.jpg");
-background-size:auto;
+background-image: url("https://i.pinimg.com/564x/b5/7d/dc/b57ddcacd10a228844a7b741decb1f95.jpg");
+background-size:cover;
 background-repeat:no-repeat;
+background-position: center;
 }
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4cdae;
+  }
 *{
     margin: 0;
     padding: 0;

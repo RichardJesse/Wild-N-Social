@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  background-image: url("https://i.pinimg.com/564x/b5/7d/dc/b57ddcacd10a228844a7b741decb1f95.jpg");
+  background-position: cover;
 }
 body{
   min-height: 100vh;
