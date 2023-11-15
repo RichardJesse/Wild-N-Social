@@ -5,8 +5,8 @@
 /* Bootstrap CSS */ @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 *{
-
-background-image: url("https://i.pinimg.com/564x/14/98/43/149843d1932ec94a29be3d804d8b52c3.jpg");
+/*login/signup page*/
+background-image: url("https://i.pinimg.com/564x/f0/a6/a4/f0a6a4c39a4dfa7accf63f9a457f28ce.jpg");
 background-size:auto;
 background-repeat:no-repeat;
 }
