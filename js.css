@@ -1,11 +1,13 @@
 /* Google Font Import Link */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Nunito+Sans:ital,opsz,wght@1,6..12,400;1,6..12,600&family=Playfair+Display&display=swap');
   *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
 }
 nav{
   position: fixed;
@@ -53,6 +55,19 @@ nav.sticky .logo a{
 }
  .nav-links li a:hover{
    color: rgb(54, 43, 23);
+ }
+ .nav-links li a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #ee5a50;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+ }
+ .nav-links li a :hover ::after{
+  width: 0%;
+  transition: 0.5s;
  }
  nav.sticky .nav-links li a{
    color: #fff;
