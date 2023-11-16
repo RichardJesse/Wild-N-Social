@@ -4,46 +4,43 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color:#faebd7
 }
 
-/* Introduction */
 
-.intro {
-    padding: 20px;
+.headera{
+
+    color: rgb(17, 16, 14);
     text-align: center;
-    background-color: #f5f5f5;
-}
-
-.intro h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
+    padding: 20px;
+    text-decoration: none;
+
 }
-
-/* Services */
-
-.services {
+.header2{
+    text-align: center;
+}
+.p{
     padding: 20px;
     text-align: center;
     background-color: #fff;
 }
 
-.services h2 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
 /* Image */
 
-.image {
+.pic{
     display: block;
     margin: 10px auto;
-    max-width: 50%;
+    max-width: 80%;
     height: auto;
+    flex: content;
+    flex-basis: 31px; 
+   background:#fff3f3;
+   border-radius: 20px;
+   margin-bottom: 10%;
+   padding:15px 12px;
+   box-sizing:border-box;
+   transition: 0.5s;
 }
 
-/* Video */
-
-video {
-    max-width: 100%;
-    height: auto;
-}
