@@ -4,9 +4,13 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color:#faebd7
+    background-color:#fad7df
 }
-
+.cont{
+    color: #362b2b;
+text-align: center;
+display: inline;
+}
 
 .headera{
 
@@ -20,6 +24,7 @@ body {
 }
 .header2{
     text-align: center;
+    color: #a34a4a;
 }
 .p{
     padding: 20px;
@@ -32,7 +37,7 @@ body {
 .pic{
     display: block;
     margin: 10px auto;
-    max-width: 80%;
+    max-width: 50%;
     height: auto;
     flex: content;
     flex-basis: 31px; 
@@ -42,5 +47,6 @@ body {
    padding:15px 12px;
    box-sizing:border-box;
    transition: 0.5s;
+   
 }
 
