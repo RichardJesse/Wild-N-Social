@@ -1,100 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" >
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us Page</title>
-    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
-    
+    <title>Contact us </title>
     <link rel="stylesheet" href="styler.css">
-</head>
+    <link rel="stylesheet" href="js.css"
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <link rel="stylesheet" href="js.css">
-        <div class="nav-content">
-          <div class="logo">
-            <a href="#">Wild N' Social</a>
-          </div>
-          <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    <!--code starts here-->
-   <section>
     <div class="section-header">
-        <div class="container">
 <h2>Contact Us</h2>
-<p></p>
-
-        </div>
-    </div>
-    <div class="container">
-    <div class="row">
-       
-        <div class="contact-info">
-
-            <div class="contact-info-item">
-                <div class="contact-info-icon">
-                    <i class="fas fa-home"></i>
-                </div>
-                <div class="contact-info-content">
-                    <i class="fa-regular fa-map"></i>
-                    <h4>Address</h4>
-                    <p>24648-00100, <br>Nairobi,Kenya.</p>
-                </div>
-            </div>
-            <div class="contact-info-item">
-                <div class="contact-info-icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-
-                <div class="contact-info-content">
-                    <h4>Phone</h4>
-                    <p>+254715702112</p>
-                </div>
-            </div>
-
-            <div class="contact-info-item">
-                <div class="contact-info-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="contact-info-content">
-                    <h4>Email</h4>
-                    <p>info@wildnsoci.co.ke</p>
-                </div>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form id="contact-form">
-                <h2>Send Message</h2>
-                <div class="input-box">
-                  <input type="text" required="true">
-                  <span>Full Name</span>
-                </div>
-                <div class="input-box">
-                    <input type="email"required="true">
-                <span>Email</span>
-            </div>
-<div class="input-box">
-    <textarea required="true"></textarea>
-    <span>Type your Message...</span>
 </div>
-<div class="input-box">
-    <input type="submit" value="Send">
-</div>
-                </div>
-            </form>
-        </div>
+<nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#">Wild N' Social</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-    </div>
-   
-   </section>
+  </nav>
 
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">24646-00100,</div>
+          <div class="text-two">Nairobi,Kenya</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+254715702112</div>
+          <div class="text-two">+254712568941</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">wildnsoci@gmail.com</div>
+          <div class="text-two">info.wildnsoci@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have further enquiries,kindly contact us here below. </p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+            <input type="text" placeholder="Enter message">
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
 </body>
 </html>

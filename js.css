@@ -16,6 +16,7 @@ nav{
   width: 100%;
   padding: 20px;
   transition: all 0.4s ease;
+  
 }
 nav.sticky{
   padding: 15px 20px;
@@ -33,7 +34,7 @@ nav .nav-content{
 nav .logo a{
   font-weight: 500;
   font-size: 35px;
-  color: #f5d29d;
+  color: #3F352C;
 }
 nav.sticky .logo a{
   color: #b96464;
@@ -46,15 +47,15 @@ nav.sticky .logo a{
   margin: 0 8px;
 }
  .nav-links li a{
-  text-decoration: none;
-  color: rgb(230, 107, 137);
+  text-decoration: bold;
+  color: #000000;
   font-size: 18px;
   font-weight: 500;
   padding: 10px 4px;
   transition: all 0.3s ease;
 }
  .nav-links li a:hover{
-   color: rgb(54, 43, 23);
+   color: #BDA18C;
  }
  .nav-links li a::after{
   content: '';
