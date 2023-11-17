@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEDDINGS</title>
-    <h1>WEDDINGS</h1>
+    <title>Corporate Parties</title>
+    <link rel="stylesheet" href="js.css">
     <style>
         body {
             margin: 0;
+            padding: 0;
             overflow: hidden;
+            background-color: #B28E6C;
+            text-align: center;
+            text-decoration-color:#FFFFFF;
+            font-family:monospace;
+            background-image: url(https://i.pinimg.com/564x/f3/df/f6/f3dff6d75273b8186db4ee04d28d55c9.jpg);
+            font-size: 20px;
         }
 
 
         .slideshow-container {
             display: flex;
-            width: 300px; /* Four pictures, each taking 25% width */
+            width: 300%; /* Four pictures, each taking 25% width */
             transition: transform 1s ease-in-out;
-            transition-loop: repeat;
+            animation-iteration-count: spin 1s linear infinite;
+            motion-rotation: reverse;
 
         }
 
@@ -26,44 +34,73 @@
         }
 
         img {
-            width: 300px;
-            height: auto;
+            width: 400px;
+            height: 400px;
         }
     </style>
 </head>
 <body>
-    <h2>ALL OUR WEDDINGS</h2>
-    
-<div class="slideshow-container">
-    <div class="slide">
-    <img src="https://i.pinimg.com/736x/9f/9a/3e/9f9a3e034e0059617a5e1d354393c1a7.jpg">
+    <section>
+        <nav>
+            <div class="nav-content">
+              <div class="logo">
+                <a href="#">Wild N' Social</a>
+              </div>
+              <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+   
+      <section>
+        <div>
+            <h2> Some Corporate Events</h2>
+        </div>
+        
+      </section>
+   <section>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam vero, omnis neque voluptatibus ad placeat nihil, modi eligendi accusantium, delectus hic veritatis labore optio accusamus ab minima natus facilis.</p>
     </div>
-    <div class="slide">
-        <img src="https://i.pinimg.com/564x/f5/0c/b4/f50cb4a40ef8b7fadbaf2927f0fdae0a.jpg">
-    </div>
-    <div class="slide">
-        <img src="https://i.pinimg.com/564x/e5/cf/e7/e5cfe75ece1756dd1b607621f5fa4589.jpg">
-    </div>
-    <div class="slide">
-        <img src="https://i.pinimg.com/564x/62/71/a5/6271a556e53319d9eca0fe6f6cbd9fa4.jpg">
-    </div>
-    <div class="slide">
-        <img src="https://i.pinimg.com/564x/e8/a7/9f/e8a79fe7403da98da45b1b4a3a430314.jpg">
-    </div>
-    <div class="slide">
-        <img src="https://i.pinimg.com/564x/5d/e0/8e/5de08ebc3cd8ec60cb6feea821b52764.jpg">
-    </div>
-    <div class="slide">
-        <img src="https://i.pinimg.com/564x/e9/d9/4f/e9d94f8f059afb79b0d3b6ca25cc763d.jpg">
-    </div>
-    <div class="slide">
-        <img src="https://i.pinimg.com/564x/8b/f3/55/8bf35508490c6ae17f1caa04982453be.jpg">
-    </div>
-    <div class="slide">
-        <img src="https://i.pinimg.com/564x/33/48/96/334896d568ccee1f07d13a0a70d470e9.jpg">
-    </div>
-</div>
-
+   </section>
+    <section>
+        <div class="slideshow-container">
+            <div class="slide">
+            <img src="https://i.pinimg.com/564x/94/98/ac/9498ace75f35f3246bfbc734348678db.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/564x/53/50/e4/5350e4c1d84cdff92223ba7a9c3df6fe.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/564x/42/58/e4/4258e485871da91af5bea666e5e6376a.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/736x/0e/b0/94/0eb094cd33cda3977fd01cbae769558e.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/564x/85/47/8d/85478d74b5e46d4543be12dd43b489fe.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/564x/4f/1d/73/4f1d73c68ae5d87979077482464a76fd.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/564x/8d/9e/7f/8d9e7fe22fdf2c4b2756d33ce5e4253d.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/564x/fb/82/17/fb8217b694fa47c290c22dc2e988a8a1.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/564x/08/31/fd/0831fd6a3eddb21bf78eb0de1ed99105.jpg">
+            </div>
+        </div>
+        
+        
+    </section>
 
 
 
@@ -77,7 +114,7 @@
         slideshowContainer.style.transform = 'translateX(' + transformValue + ')';
     }
 
-    setInterval(nextSlide, 1500); // 5 seconds interval
+    setInterval(nextSlide, 1900); // 5 seconds interval
 </script>
 
 </body>

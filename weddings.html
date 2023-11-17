@@ -4,36 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weddings</title>
-    <h1 style="text-align: center; text-decoration: none; color: #3f352c;">Weddings</h1>
+    <link rel="stylesheet" href="js.css">
     <style>
         body {
-            background-color:#e6dcd3 ;
             margin: 0;
             overflow: hidden;
+            background-color: #B28E6C;
+            text-align: center;
+            color:#FFFFFF;
+            font-family:monospace;
+            background-image: url(https://i.pinimg.com/564x/f3/df/f6/f3dff6d75273b8186db4ee04d28d55c9.jpg);
+            font-size: 20px;
+            
         }
 
 
         .slideshow-container {
             display: flex;
-            width: 300px; /* Four pictures, each taking 25% width */
+            width: 300%; /* Four pictures, each taking 25% width */
             transition: transform 1s ease-in-out;
-            transition-loop: repeat;
+            animation-iteration-count: spin 1s linear infinite;
+            motion-rotation: reverse;
 
         }
 
         .slide {
-            width: 300px;
+            width: 200%;
             box-sizing: border-box;
         }
 
         img {
-            width: 300px;
-            height: auto;
+            width: 100%;
+            height:auto;
         }
     </style>
 </head>
 <body>
-    <h2>Our Weddings</h2>
+    <section>
+        <nav>
+            <div class="nav-content">
+              <div class="logo">
+                <a href="#">Wild N' Social</a>
+              </div>
+              <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+   
+      <section>
+        <div>
+            <h2> Some Weddings</h2>
+        </div>
+        
+      </section>
+   <section>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam vero, omnis neque voluptatibus ad placeat nihil, modi eligendi accusantium, delectus hic veritatis labore optio accusamus ab minima natus facilis.</p>
+    </div>
+   </section>
     
 <div class="slideshow-container">
     <div class="slide">
@@ -71,14 +105,15 @@
 <script>
     const slideshowContainer = document.querySelector('.slideshow-container');
     let currentIndex = 0;
+    const totalSlides = 6; // Update the total number of slides
 
     function nextSlide() {
-        currentIndex = (currentIndex + 1) % 4;
+        currentIndex = (currentIndex + 1) % totalSlides;
         const transformValue = -currentIndex * 100 + '%';
         slideshowContainer.style.transform = 'translateX(' + transformValue + ')';
     }
 
-    setInterval(nextSlide, 1500); // 5 seconds interval
+    setInterval(nextSlide, 1); // 1.5 seconds interval for smooth transition
 </script>
 
 </body>
