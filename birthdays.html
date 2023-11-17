@@ -1,9 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wild N' Social - Birthday Gallery</title>
+    <style>
+        body {
+            background-color: #F5F5DC;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery">
+    <div class="image-container" onclick="slideImage(this)">
+        <img class="image" src="birthday1.jpg" alt="">
+    </div>
+    <div class="image-container" onclick="slideImage(this)">
+        <img class="image" src="birthday2.jpg" alt="">
+    </div>
+    <div class="image-container" onclick="slideImage(this)">
+        <img class="image" src="birthday3.jpg" alt="">
+    </div>
+</div>
+
+<script>
+    function slideImage(element) {
+        // Add slide effect here (you can use a library like jQuery for more complex animations)
+        alert("You clicked on an image! Implement slide effect here.");
+    }
+</script>
+
+</body>
+</html>
+
 </head>
 <body>
     
