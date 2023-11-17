@@ -1,74 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>GALLERY</title>
-	<h1  style="text-align: center;">WEDDINGS</h1>
-	<style type="text/css">
-		 #slider{
-		 	overflow: hidden;
-		 }
-		  #slider figure{
-		  	position: relative;
-		  	width: 2500px;
-		  	margin: 0;
-		  	left: 0;
-		  	animation: 20s slider infinite;
-		  }
-		   #slider figure img{
-		   	float: left;
-		   	width: 20%;
-		   }
-		   @keyframes slider{
-		   	0%{
-		   		left: 0;
-		   	}
-		   		20%{
-		   		left: 0;
-		   	}
-		   		25%{
-		   		left: -100;
-		   	}
-		   		45%{
-		   		left: -100;
-		   	}
-		   		50%{
-		   		left: -200;
-		   	}
-		   		70%{
-		   		left: -200;
-		   	}
-		   		75%{
-		   		left: -300;
-		   	}
-		   		95%{
-		   		left: -300;
-		   	}
-		   		100%{
-		   		left: -400;
-		   	}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weddings</title>
+    <h1 style="text-align: center; text-decoration: none; color: #3f352c;">Weddings</h1>
+    <style>
+        body {
+            background-color:#e6dcd3 ;
+            margin: 0;
+            overflow: hidden;
+        }
 
-		   }
-	</style>
+
+        .slideshow-container {
+            display: flex;
+            width: 300px; /* Four pictures, each taking 25% width */
+            transition: transform 1s ease-in-out;
+            transition-loop: repeat;
+
+        }
+
+        .slide {
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-	<div id="slider">
-		<figure>
-	  <p>Here are some of the beautiful weddings that we have done before. We have done so many different weddings: Garden weddings, Church weddings and even beach weddings.<span style="color:#FDFD96;">.</p>
-     <img src=https://i.pinimg.com/564x/a7/68/76/a768767aa1225659cd111547a87bfb39.jpg> 
-     <img src=https://i.pinimg.com/564x/d7/64/84/d76484eb8bce59c0c8f6c773b3a70723.jpg>
-      <img src=https://i.pinimg.com/564x/94/ba/71/94ba71a0d2520cab704900a1f5b52353.jpg>
-       <img src=https://i.pinimg.com/564x/b7/fb/84/b7fb846c11ab8b3b69d4a852d52918d1.jpg>
-       
-       
-   </figure>
-   </div>
+    <h2>Our Weddings</h2>
+    
+<div class="slideshow-container">
+    <div class="slide">
+    <img src="https://i.pinimg.com/736x/9f/9a/3e/9f9a3e034e0059617a5e1d354393c1a7.jpg">
+    </div>
+    <div class="slide">
+        <img src="https://i.pinimg.com/564x/f5/0c/b4/f50cb4a40ef8b7fadbaf2927f0fdae0a.jpg">
+    </div>
+    <div class="slide">
+        <img src="https://i.pinimg.com/564x/e5/cf/e7/e5cfe75ece1756dd1b607621f5fa4589.jpg">
+    </div>
+    <div class="slide">
+        <img src="https://i.pinimg.com/564x/62/71/a5/6271a556e53319d9eca0fe6f6cbd9fa4.jpg">
+    </div>
+    <div class="slide">
+        <img src="https://i.pinimg.com/564x/e8/a7/9f/e8a79fe7403da98da45b1b4a3a430314.jpg">
+    </div>
+    <div class="slide">
+        <img src="https://i.pinimg.com/564x/5d/e0/8e/5de08ebc3cd8ec60cb6feea821b52764.jpg">
+    </div>
+    <div class="slide">
+        <img src="https://i.pinimg.com/564x/e9/d9/4f/e9d94f8f059afb79b0d3b6ca25cc763d.jpg">
+    </div>
+    <div class="slide">
+        <img src="https://i.pinimg.com/564x/8b/f3/55/8bf35508490c6ae17f1caa04982453be.jpg">
+    </div>
+    <div class="slide">
+        <img src="https://i.pinimg.com/564x/33/48/96/334896d568ccee1f07d13a0a70d470e9.jpg">
+    </div>
+</div>
 
-     
-     
 
 
+
+<script>
+    const slideshowContainer = document.querySelector('.slideshow-container');
+    let currentIndex = 0;
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % 4;
+        const transformValue = -currentIndex * 100 + '%';
+        slideshowContainer.style.transform = 'translateX(' + transformValue + ')';
+    }
+
+    setInterval(nextSlide, 1500); // 5 seconds interval
+</script>
 
 </body>
 </html>

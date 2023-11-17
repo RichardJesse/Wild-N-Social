@@ -5,7 +5,7 @@
 .headerh{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(248, 235, 240, 0),rgba(253, 188, 213, 0)),url(https://i.pinimg.com/564x/38/6d/2c/386d2ca3cbc15649c5547627701c4dfe.jpg);
+    background-image: linear-gradient(rgba(248, 235, 240, 0),rgba(253, 188, 213, 0)),url(https://i.pinimg.com/564x/0b/02/ac/0b02acdfb26744094073cf2b5ec10163.jpg);
     background-position: center;
     background-size: cover;
     position:relative;
@@ -13,7 +13,7 @@
 }
 .text-boxh{
     width: 90%;
-    color: #efb1b1;
+    color: #ebe3db;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,7 +23,7 @@
 .text-boxh p{
     margin: 10px 0 40px;
     font-size: 18px;
-    color: #fff;
+    color: #ebe3db;
 }
 .header{
     min-height: 100vh;
@@ -38,7 +38,7 @@ nav img{
 }
 .text-box{
     width: 90%;
-    color: #faeeee;
+    color: #ebe3db;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -73,8 +73,8 @@ nav img{
     cursor: pointer;
 }
 .hero-btn:hover{
-    border: 1px solid #f39690;
-    background:#f39690;
+    border: 1px solid #9b8977;
+    background:#ffffff;
     transition: 1s;
 }
 @media(max-width:700px){
@@ -95,7 +95,7 @@ h1{
     font-weight: 600;
 }
 p{
-    color: #777;
+    color: #3f352c;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -108,10 +108,10 @@ p{
 }
 .service-col{
    flex-basis: 31px; 
-   background:#fff3f3;
+   background:#ebe3db;
    border-radius: 20px;
    margin-bottom: 5%;
-   padding:15px 12px;
+   padding:10px 12px;
    box-sizing:border-box;
    transition: 0.5s;
 }

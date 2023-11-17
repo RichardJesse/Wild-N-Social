@@ -1,5 +1,5 @@
 <?php
-$host = "127.0.0.1";
+$host = "localhost";
 $user = "root"; //edit if you have set a username for MySQL
 $pass = ""; // edit if you have set a password
 $name = "event_org";
@@ -8,7 +8,7 @@ $name = "event_org";
 $conn = new mysqli($host, $user, $pass, $name);
 // Check connection
 if($conn == TRUE){
-// 	echo "Connection succesful";
+	echo "Connection succesful";
 }
 
 else if ($conn->connect_error) {
