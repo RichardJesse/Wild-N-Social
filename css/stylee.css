@@ -19,7 +19,7 @@ body {
 
 .container {
     position: relative;
-    max-width: 430px;
+    max-width: 75%;
     width: 100%;
     background: #e6dcd3;
     border-radius: 10px;
